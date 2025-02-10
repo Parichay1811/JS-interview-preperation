@@ -1,6 +1,7 @@
-/* //Map, reduce and filter is a metho d of array. By iterate on an array it can be used to perfom a transformation or computation.
+//Map, reduce and filter is a metho d of array. By iterate on an array it can be used to perfom a transformation or computation.
 
 //Map method is used to creating a new array from the exsisting one by applying a function to the each one of the element of the first array.
+
 //pollyfill for map
 
 Array.prototype.myMap = function(cb){ //prototype i s a property of the object that allows you to add new properties to the object. here we are adding the map method to the array object.
@@ -22,6 +23,7 @@ console.log(multiplyByTwo); //[ 2, 4, 6, 8, 10 ] returns a new array with the re
 
 
 
+
 //map vs forEach 
 
 const array = [4, 5, 6, 7, 8];
@@ -34,8 +36,12 @@ const forEachValue = array.forEach((ar, i) => {  //this can not return a new arr
 })
 
 console.log(mapValue, forEachValue, array);
- */
 
+
+
+
+
+/* 
 //Question 1: What is the output of the following code:
 const numbers = [1, 2, 3, 4, 5];
 const doubleNumbers = numbers.map((num) => num * 2);
@@ -75,4 +81,4 @@ const totalMarks = students.map((stu) => {
     }
     return stu;
 }).filter((stu) => stu.marks > 90).reduce((accumulator, curr) => accumulator + curr.marks, 0);
-console.log(totalMarks); //5th
+console.log(totalMarks); //5th */
